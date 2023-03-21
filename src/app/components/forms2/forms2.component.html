@@ -1,0 +1,11 @@
+<form class="form" [formGroup]="myForm">
+    <h1 class="title py-2">Enter 3 numbers: </h1>
+    <input type="number" class="number mb-2" formControlName="one">
+    <input type="number" class="number mb-2" formControlName="two">
+    <input type="number" class="number mb-2" formControlName="three">
+    <button type="button" (click)="showNumbers()"  class="btn btn-secondary btn-md btn-block mt-2" [disabled]="myForm.invalid">CLICK ME</button>
+  </form>
+  
+  <!-- <p *ngIf="Result.length">Największa liczba to {{ Result[0] }}, najmniejsza to {{ Result[2] }}, a środkowa to {{ Result[1] }}</p> -->
+  
+  <p *ngIf="wynik">Największa liczba to {{ wynik.max }}, najmniejsza to {{ wynik.min }}, a środkowa to {{ wynik.mid }}</p>

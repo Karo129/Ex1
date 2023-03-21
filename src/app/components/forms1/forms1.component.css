@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.number{
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+.btn {
+    width: 15%;
+    padding: 0.5em;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}

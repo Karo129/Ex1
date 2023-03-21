@@ -1,0 +1,11 @@
+<form class="form" (ngSubmit)="showNumbers()">
+    <h1 class="title py-2">Enter 3 numbers: </h1>
+    <input type="number" name="firstNb" class="number mb-2" [(ngModel)]="firstNb">
+    <input type="number"  name="secondNb" class="number mb-2" [(ngModel)]="secondNb">
+    <input type="number" name="thirdNb" class="number mb-2" [(ngModel)]="thirdNb">
+    <button type="submit" class="btn btn-secondary btn-md btn-block mt-2">CLICK ME</button>
+  </form>
+  
+  <p *ngIf="Result">Największa liczba to {{ Result.max }}, najmniejsza to {{ Result.min }}, a środkowa to {{ Result.mid }}</p>
+
+  
